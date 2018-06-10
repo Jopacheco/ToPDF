@@ -10,7 +10,7 @@ namespace Controllers
 {
     class PdfImprimir
     {
-        var pdfViewer = new PdfViewerNet.PdfViewer();
+        var pdfViewer = new PdfViewer();
         pdfViewer.OpenDocument(@"c:\test\test.pdf");
         pdfViewer.DocumentPrintBegin += PdfViewer_DocumentPrintBegin;
         pdfViewer.DocumentPrintEnd += PdfViewer_DocumentPrintEnd;
@@ -45,4 +45,4 @@ namespace Controllers
             " Number of pages printed:" + e.NumberOfPagesPrinted;
         }
 }
-}
+    }
