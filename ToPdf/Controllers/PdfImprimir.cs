@@ -45,3 +45,4 @@ namespace Controllers
             " Number of pages printed:" + e.NumberOfPagesPrinted;
         }
 }
+}
