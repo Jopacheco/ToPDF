@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Models Model= new Model();
+            Models Model= new Models();
             Views ViewInput = new Views();
             Views ViewIntfr = new Views();
 
