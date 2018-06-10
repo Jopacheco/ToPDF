@@ -1,0 +1,1 @@
+BugFixes: [PdfEdit] Small improvement in handling PDF malformed documents
