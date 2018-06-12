@@ -8,8 +8,10 @@ using PdfPrintingNet;
 
 namespace Controllers
 {
-    class PdfImprimir
+        public class PdfImprimir
     {
+        /*** Abertura de ficheiro e operações de impressão do mesmo ***/
+
         var pdfViewer = new PdfViewer();
         pdfViewer.OpenDocument(@"c:\test\test.pdf");
         pdfViewer.DocumentPrintBegin += PdfViewer_DocumentPrintBegin;
@@ -44,5 +46,11 @@ namespace Controllers
             " Number of pages in document=" + e.NumberOfPagesInDocument +
             " Number of pages printed:" + e.NumberOfPagesPrinted;
         }
-}
+        // GET: Imprimir e retorna a View
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+    }
     }

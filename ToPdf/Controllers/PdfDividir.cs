@@ -5,9 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Controllers
-{ 
+{
 
-    class PdfDividir
-    {
+        public class PdfDividir 
+        {
+            // GET: Dividir e retorna a View
+
+            public ActionResult Index()
+            {
+                return View();
+            }
+        }
     }
-}
+

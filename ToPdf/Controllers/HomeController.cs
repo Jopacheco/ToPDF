@@ -6,27 +6,36 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    class HomeController
+    public class HomeController
+    {
+
+    }
+
+    public class PdfRemover
     {
     }
 
-    class PdfRemover
+    public class PdfImprimir
     {
     }
 
-    class PdfImprimir
+    public class PdfExtrair
     {
     }
 
-    class PdfExtrair
+    public class PdfVisualizar
     {
     }
 
-    class PdfVisualizar
+    public class PdfDividir
     {
     }
 
-    class PdfDividir
+    internal class ViewInput
     {
+        public ViewInput()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace ToPdf.Controllers
 {
     class PdfVisualizar
     {
-        /* Para Abrir documento Pdf */
+        /*** Abertura de ficheiro Pdf e operações de visualização ***/
 
         var pdfViewer = new PdfVisualizar();
         pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
@@ -26,6 +26,12 @@ namespace ToPdf.Controllers
 p       private void PdfViewer_DocumentLoaded(object sender, DocumentLoadedEventArgs e)
         {
             MessageBox.Show("Document " + e.FileName + " was loaded");
+        }
+        // GET: Visualizar
+
+        public ActionResult Index()
+        {
+            return View();
         }
     }
 }

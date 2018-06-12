@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    class PdfJuntar
+    public class PdfJuntar
     {
+        // GET: Juntar e retorna a View
+
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }
